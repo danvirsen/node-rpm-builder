@@ -295,6 +295,7 @@ An array of changelog entries in format:
 ```
 {
   date: Date,
+  version: String,
   author: String,
   changes: Array<String>,
 }
@@ -306,6 +307,7 @@ An array of changelog entries in format:
 const changelog = [
   {
     date: new Date('1995-12-17T03:24:00'),
+    version: '1.0.1-1',
     author: 'John Foo <john@foo.com>',
     changes: [
       'updated core library to 1.5.2',
@@ -314,6 +316,7 @@ const changelog = [
   },
   {
     date: new Date('1995-12-19T03:24:00'),
+    version: '1.0.0-1',
     author: 'John Foo <john@foo.com>',
     changes: [
       'established DB queries cache'
